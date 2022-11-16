@@ -1,0 +1,16 @@
+INSERT;{"name":"diego","dpi":"7007651463911","datebirth":"2001-04-27","address":"guatemala","companies":["Azucar caña real","Malher","Litegua","Interbanco","Belcorp"],"recluiter":"Max Cerna"}
+INSERT;{"name":"josé","dpi":"4407352736124","datebirth":"1996-06-13","address":"petapa","companies":["Cofiño Stahl","Grupo Progreso","Kimberly-Clark","Tacobell","Banrural"],"recluiter":"Diego Orellana"}
+INSERT;{"name":"roberto","dpi":"9054951941414","datebirth":"1992-05-12","address":"villanueva","companies":["Kimberly-Clark","Tacobell","Banrural","Azucar caña real","Malher","Litegua"],"recluiter":"Martín Carrera"}
+INSERT;{"name":"Max","dpi":"1338466456656","datebirth":"1990-04-05","address":"santa rosa","companies":["Cofiño Stahl","Grupo Progreso","Litegua","Interbanco","Belcorp"],"recluiter":"Jorge Lopez"}
+INSERT;{"name":"rosalyn","dpi":"1289361962257","datebirth":"1997-10-17","address":"jalapa","companies":["Tacobell","Banrural","Azucar caña real","Cofiño Stahl","Grupo Progreso"],"recluiter":"Juan Fernando"}
+INSERT;{"name":"robyn","dpi":"6789822289548","datebirth":"2002-09-29","address":"baja verapaz","companies":["Masesa","Pollo Campero","Agencia Way","ADOC"],"recluiter":"Sara Sanchez"}
+INSERT;{"name":"budd","dpi":"4803234239294","datebirth":"1997-07-16","address":"progreso","companies":["Masesa","Pollo Campero","Cofiño Stahl","Grupo Progreso"],"recluiter":"Julieta de León"}
+INSERT;{"name":"lloyd","dpi":"9843537392080","datebirth":"1994-10-04","address":"alta verapaz","companies":["Azucar caña real","Malher","Litegua","Interbanco","Belcorp"],"recluiter":"Owen Corvin"}
+INSERT;{"name":"carlos","dpi":"7414247645126","datebirth":"1996-06-27","address":"petapa","companies":["Cofiño Stahl","Grupo Progreso","Litegua","Interbanco","Belcorp"],"recluiter":"Terry Borgar"}
+INSERT;{"name":"jarvis","dpi":"8409956575769","datebirth":"2000-04-19","address":"guatemala","companies":["Agencia Way","ADOC","Tacobell","Banrural"],"recluiter":"Joe Higarashi"}
+INSERT;{"name":"rosalyn","dpi":"1827493627482","datebirth":"1997-10-17","address":"jalapa","companies":["Tacobell","Banrural","Malher","Agencia Way","ADOC"],"recluiter":"Lucas Film"}
+DELETE;{"name":"robyn","dpi":"6789822289548","datebirth":"2002-09-29","address":"baja verapaz","companies":["Masesa","Pollo Campero","Agencia Way","ADOC"],"recluiter":"Sara Sanchez"}
+DELETE;{"name":"budd","dpi":"4803234239294","datebirth":"1997-07-16","address":"progreso","companies":["Masesa","Pollo Campero","Cofiño Stahl","Grupo Progreso"],"recluiter":"Julieta de León"}
+DELETE;{"name":"lloyd","dpi":"9843537392080","datebirth":"1994-10-04","address":"alta verapaz","companies":["Azucar caña real","Malher","Litegua","Interbanco","Belcorp"],"recluiter":"Owen Corvin"}
+DELETE;{"name":"carlos","dpi":"7414247645126","datebirth":"1996-06-27","address":"petapa","companies":["Cofiño Stahl","Grupo Progreso","Litegua","Interbanco","Belcorp"],"recluiter":"Terry Borgar"}
+DELETE;{"name":"jarvis","dpi":"8409956575769","datebirth":"2000-04-19","address":"guatemala","companies":["Agencia Way","ADOC","Tacobell","Banrural"],"recluiter":"Joe Higarashi"}
