@@ -1,0 +1,115 @@
+﻿@model IEnumerable<TalentHUB.Models.Register>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Talent Hub</h1>
+
+<div class="row">
+    <div class="col-3">
+        <a class="btn btn-outline-info" asp-action="Details">Detalles de una persona</a>
+    </div>
+
+    <div class="col-2">
+        <a class="btn btn-outline-info" asp-action="Message">Enviar mensaje</a>
+    </div>
+</div>
+
+<p>
+
+</p>
+
+<form asp-action="SearchByName">
+    <div class="form-group">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar Por nombre</button>
+        <p>
+
+        </p>
+        <input name="IdName" type="text" value="" placeholder="Nombre a buscar" class="form-control" />
+    </div>
+</form>
+
+<p>
+
+</p>
+
+<form method="post" enctype="multipart/form-data" asp-controller="TalenTHUB" asp-action="ReadFile">
+    <div class="form-group">
+        <input type="file" class="form-control-file" name="FileUploaded" />
+        <p>
+
+        </p>
+        <input type="submit" value="Agregar" />
+    </div>
+</form>
+
+<p>
+
+</p>
+
+<h3>
+    <span style="color: red;">
+        @TempData["Message"]
+    </span>
+</h3>
+<p>
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dpi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datebirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.recluiter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Companies)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dpi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Datebirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.recluiter)
+                </td>
+                <td>
+                    @foreach (var item2 in item.Companies)
+                    {
+                        <ul>
+                            <li>
+                                @Html.DisplayFor(modelItem => item2)
+                            </li>
+                        </ul>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

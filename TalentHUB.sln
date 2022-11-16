@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentHUB", "TalentHUB\TalentHUB.csproj", "{192F7E13-B40E-4E08-A507-A3E611C3B4E3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibliotecaGenerica", "BibliotecaGenerica\BibliotecaGenerica.csproj", "{69B9DC53-40F2-4D5F-87FF-2ACE9F103DE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{192F7E13-B40E-4E08-A507-A3E611C3B4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192F7E13-B40E-4E08-A507-A3E611C3B4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192F7E13-B40E-4E08-A507-A3E611C3B4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192F7E13-B40E-4E08-A507-A3E611C3B4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B9DC53-40F2-4D5F-87FF-2ACE9F103DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B9DC53-40F2-4D5F-87FF-2ACE9F103DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B9DC53-40F2-4D5F-87FF-2ACE9F103DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B9DC53-40F2-4D5F-87FF-2ACE9F103DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D25FFB51-ABF4-4F42-BD3E-B4780067799F}
+	EndGlobalSection
+EndGlobal

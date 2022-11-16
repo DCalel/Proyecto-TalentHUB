@@ -1,0 +1,122 @@
+﻿@model IEnumerable<TalentHUB.Models.Register>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Registro</h1>
+
+<h3>
+    <span style="color: red;">
+        @TempData["Message"]
+    </span>
+</h3>
+
+<form asp-action="SearchByDpi">
+    <button class="btn btn-outline-info my-2 my-sm-0" onClick="validar(password.value);" placeholder="DPI" type="submit">Buscar por DPI</button>
+    <p>
+
+    </p>
+    <input name="IdDpi" type="text" value="" placeholder="DPI" class="form-control" />
+    <p>
+
+    </p>
+    <input type="text" name="password" value="" id="password" placeholder="Contraseña" maxlength="8" class="form-control" />
+</form>
+
+<div class="container">
+    <div class="row">
+        <label>Conversaciones Cifradas: </label> @ViewBag.Encrypt
+    </div>
+    <p>
+
+    </p>
+    <div class="row">
+        <label>Conversaciones Descifradas: </label> @ViewBag.Decrypt
+    </div>
+
+    <p>
+
+    </p>
+    <p>
+
+    </p>
+
+    <div class="row">
+        <label>Carta Cifradas: </label> @ViewBag.EncryptLetter
+    </div>
+    <p>
+
+    </p>
+    <div class="row">
+        <label>Carta Descifradas: </label> @ViewBag.DecryptLetter
+    </div>
+
+</div>
+
+<p>
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dpi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datebirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.recluiter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Companies)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dpi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Datebirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.recluiter)
+                </td>
+                <td>
+                    @foreach (var item2 in item.Companies)
+                    {
+                        <ul>
+                            <li>
+                                @Html.DisplayFor(modelItem => item2)
+                            </li>
+                        </ul>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<div>
+    <a asp-action="Index">Regresar</a>
+</div>
